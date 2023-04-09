@@ -1,8 +1,8 @@
-import java.util.Arrays;
+package homeWork1;
+
 import java.util.Scanner;
 
-
-public class Main {
+public class Seasons {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         System.out.println("Введите название месяца:");
@@ -34,7 +34,6 @@ public class Main {
                 System.out.println("Ошибка: некорректное название месяца");
                 System.exit(1);
         }
-        System.out.println(monthName + " относится к сезону " + season);
+        System.out.println(monthName + "относится к сезону" + season);
     }
 }
-
