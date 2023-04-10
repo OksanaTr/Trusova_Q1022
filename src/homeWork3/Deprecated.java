@@ -1,11 +1,11 @@
+package homeWork3;
 import java.util.Scanner;
-import java.util.concurrent.atomic.AtomicIntegerArray;
-public class Main {
 
+public class Letter_if {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         System.out.print("Введите букву: ");
-        @Deprecated String letter;
+        @Deprecated String letter = null;
         String Letter = scanner.nextLine().toLowerCase();
         if (letter.equals("a")||
                 letter.equals("o")||
@@ -18,4 +18,3 @@ public class Main {
             System.out.print("Согласная букваж: ");}
     }
 }
-
