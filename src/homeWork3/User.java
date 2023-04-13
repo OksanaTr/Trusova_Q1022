@@ -1,32 +1,25 @@
 package homeWork3;
 
 public class User {
-    private String firstName;
-    private String lastName;
-    private int age;
-    private String gender;
-    public User (String firstName, String lastName, int age, String gender) {
-        this.firstName = firstName;
-        this.lastName = lastName;
-        this.age = age;
-        this.gender = gender;
-    }
-    public String getFullName() {
-        return lastName+""+firstName;
-    }
-    public int getAge() {
-        return age;
-    }
-    public void increaseAge() {
-        age++;
-    }
-    public void println(){
-        System.out.println("Name: " + firstName + "" + lastName);
-        System.out.println("Age: "+ age);
-        System.out.println("Gender: "+gender);
-    }
-    public enum Gender{
-        MALE,
-        FEMALE
-    }
-}
+    public enum EnumUser {
+        USER1(name:"Anna", lastname:"Smirnova", age:18, gender:"F"
+        USER2 {name: "Maks", lastname: "Dubov", age: 36, gender:"M"};
+        USER 3 (name: "Mariya", lastname: "Ivanova", age: 28, gender:"F");
+        USER 4 (name:"Ivan", lastname:"Klimov", age: 24, gender "M"),
+
+
+        private String Name;
+        private String LastName;
+        private int age;
+        private String gender;
+
+        void USER (String Name, String lastName, int age, String gender) {
+            this.Name = Name;
+            this.LastName = lastName;
+            this.age = age;
+            this.gender = gender;
+        }
+        public void printNameAndLastName(){
+            System.out.println( Name+ "" + LastName);
+
+        }}}

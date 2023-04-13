@@ -1,21 +1,25 @@
+import homeWork3.ArraySorter;
+import homeWork3.EnumUser;
+import homeWork3.MONTH;
+
+import java.time.Month;
 import java.util.Scanner;
 import java.util.concurrent.atomic.AtomicIntegerArray;
+
+import static homeWork3.MONTH.APRIL;
+
 public class Main {
 
-    public static void main(String[] args) {
-        Scanner scanner = new Scanner(System.in);
-        System.out.print("Введите букву: ");
-        @Deprecated String letter;
-        String Letter = scanner.nextLine().toLowerCase();
-        if (letter.equals("a")||
-                letter.equals("o")||
-                letter.equals("e")||
-                letter.equals("i")||
-                letter.equals("u")) {
-            System.out.print("Гласная буква");
-        }
-        else {
-            System.out.print("Согласная букваж: ");}
-    }
-}
+    public static  void main (String[] args) {
+        //int [] arr = {4, 18, -5, 321, 246};
+        //ArraySorter arraySorter = new ArraySorter();
+        //arraySorter.printSortArray(arr);
+        //} }
+        USER user = USER.USER1;
+        user.printNameAndLastName();
+    }}
+
+
+
+
 
