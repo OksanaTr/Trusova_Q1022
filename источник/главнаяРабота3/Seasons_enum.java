@@ -5,7 +5,7 @@ import java.util.Scanner;
 public class Seasons_enum {
   
     public void checkSeason(MONTH month) {
-        Scanner scanner = new Scanner(System.in);
+      
         System.out.print("Введите название месяца (от января до декабря): ");
         String month = scanner.nextLine();
 
