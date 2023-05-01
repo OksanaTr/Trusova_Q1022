@@ -1,33 +1,29 @@
 package homeWork4;
 
-enum POST {
-    DIRECTOR,
-    WORKER
-}
+public abstract class Employee extends Person {
 
-public abstract class Employee {
+    protected int length;
+    private int exp;
+    protected PROFF proff;
+    private final int basic = 1000;
 
-    String position;// должность
-    double baseRate; //базовая ставка
-   double  primeRate; // коэффициент
-
-    public static void checkPosition(POST post) {
-        switch (post) {
-            case DIRECTOR:
-                break;
-            case WORKER:
-                break;
-            default:
-                throw new IllegalStateException("Unexpected value: " + post);
-        }
-        public void salary(double primeRate; double baseRate; double workExperience;){
-             double summa;
-            summa = primeRate * baseRate * workExperience;
-        }
-        } public abstract void establishPosition();
-
+    public Employee(String name, String secondName, int exp) {
+        super(name, secondName);
+        this.exp = exp;
+        setProf();
+    }
+    public int getSalary(){  // реализация зарплаты
+        return basic * proff.getKoef()*exp;
 
     }
+    public abstract void setProf();
 
-
-
+    @Override
+    public String toString() {
+        return "Employee{" +
+                "exp=" + exp +
+                ", prof=" + proff +
+                ", basic=" + basic +
+                '}';
+    }
+}
