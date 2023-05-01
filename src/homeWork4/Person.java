@@ -1,13 +1,21 @@
 package homeWork4;
 
 public class Person {
-     private String firstName;
-     private String lastName;
-       public void main(String firstName, String lastName) {
-           this.firstName = firstName;
-           this.lastName = lastName;
-       }
- void fullNameOfPerson(){
-           System.out.println("Full name of person is "+ firstName+lastName);
- }}
+    private String name;
+    private String secondName;
 
+    public Person(String name, String secondName) {
+        this.name = name;
+    }
+
+    @Override
+    public String toString() {
+        return "Person{" +
+                "name='" + name + '\'' +
+                ", secondName='" + secondName + '\'' +
+                '}';
+    }
+
+
+
+}

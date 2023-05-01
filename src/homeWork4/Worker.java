@@ -1,17 +1,25 @@
 package homeWork4;
 
+import java.util.Arrays;
+
 public class Worker extends Employee {
-    Employee Employee = new Worker();
-
-    public void Worker(double _primeRate, double baseRate,double workExperience){
-        Worker(1.8, 518.5, 7.2))
-        System.out.println("Объект Рабочий создан");
-
-}
+    public Worker(String name, String secondName, int exp) {
+        super(name, secondName, exp);
+    }
+    public void addStagger(Employee employees){
+        Employee employee;
+        if(employees==null) {
+            employee = new Employee(1);
+            employee[0] = employee;
+        }else{
+            employees = Arrays.copyOf(employee, employee.length +1);
+            employee[employees.length-1] = employees;
+        }
 
     @Override
-    public void establishPosition(workExperience) {
-
+    public void setProf() {
+        this.proff = PROFF.WORKER;
     }
-
 }
+
+
