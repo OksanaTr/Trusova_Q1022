@@ -26,4 +26,5 @@ public abstract class Employee extends Person {
                 ", basic=" + basic +
                 '}';
     }
+
 }
