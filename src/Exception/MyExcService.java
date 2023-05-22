@@ -1,26 +1,10 @@
 package Exception;
 
-import java.util.Collection;
-import java.util.ArrayList;
+import java.util.NoSuchElementException;
 
-public class MyExcService {
-    public static void main(String[] args) {
-        // Создаем новую коллекцию
-        Collection<String> stringCollection = new ArrayList<>();
+public interface MyExcService  {
+    void add (String text) throws LowMemoryException;
 
-        // Добавляем несколько элементов в коллекцию
-        stringCollection.add("lemon");
-        stringCollection.add("pear");
-        stringCollection.add("apple");
-        stringCollection.add("melon");
+    String get() throws NoSuchElementException;
 
-        // Печатаем число элементов в коллекции
-        System.out.println("Number of elements: " + stringCollection.size());
-        stringCollection.add("mango");
-        // Удаляем элемент из коллекции
-        stringCollection.remove("mango");
-
-        // Опять печатаем число элементов в коллекции
-        System.out.println("Number of elements: " + stringCollection.size());
     }
-}
